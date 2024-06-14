@@ -20,7 +20,8 @@
 	- 還需要什麼資源或支持才能完成目標？
 	- 未來你要如何應用？
 -
-- ORID
+- What's ORID #card
+  collapsed:: true
 	- O-“Objective”：觀察外在客觀、事實。
 	- R-“Reflective”：重新看內在感受、反應。
 	- I-“Interpretive”：勸釋意義、價值、經驗。
