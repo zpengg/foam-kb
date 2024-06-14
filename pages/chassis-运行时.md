@@ -46,12 +46,23 @@
 				  )
 				  ```
 		- [[archaius]]
-	- 插件初始化 #card
+	- 插件初始化
+	  collapsed:: true
 		- 隐式加载
 			- 使用各自的init 方法自动执行的
 			- main 包 import
 		-
 	- 初始化handler chain
+		- ```go 
+		  // Handler interface for handlers
+		  type Handler interface {
+		      // handle invocation transportation,and tr response
+		      Handle(*Chain, *invocation.Invocation, invocation.ResponseCallBack)
+		      Name() string
+		  }
+		  
+		  ```
+		-
 	- 初始化 server
 	- 其它
 - 配置路径 ${ChassisConfDir}  > ${ChassisHome}/conf
