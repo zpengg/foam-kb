@@ -8,9 +8,11 @@
 	- 初始化handler chain
 	- 初始化 server
 	- 其它
+- 配置路径 ChassisConfDir
 -
 - ## chassis run
 - chassis run steps #card
-	-
+	- 服务注册
+	- 信号监听
 -
 -
