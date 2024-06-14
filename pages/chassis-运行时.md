@@ -4,6 +4,7 @@
 - ## chassis init
 - chassis init Steps #card
 	- 配置初始化
+	  collapsed:: true
 		- 配置路径
 			- require
 				- global config 对应 conf_path/chassis.yaml
@@ -46,6 +47,8 @@
 				  ```
 		- [[archaius]]
 	- 插件初始化
+		- 隐式加载
+		-
 	- 初始化handler chain
 	- 初始化 server
 	- 其它
