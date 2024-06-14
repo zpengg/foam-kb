@@ -101,6 +101,7 @@
 			  ```
 	- 初始化 server
 		- 根据schema 找到服务，将对应的handle func 使用 handler chain 封装
+			- http -》
 		- 启动服务，将服务注册到服务中心
 		- 监听退出信号
 	- 其它
