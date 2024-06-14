@@ -5,7 +5,7 @@
 - chassis init Steps #card
 	- 配置初始化
 		- 配置路径
-			- ``````
+			-
 		- [[archaius]]
 		-
 	- 插件初始化
