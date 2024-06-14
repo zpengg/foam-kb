@@ -64,6 +64,39 @@
 		  ```
 		- provider
 		- consumer
+		- chain
+			- ```go
+			  type Chain struct {
+			      ServiceType string
+			      Name string
+			      Handlers []Handler
+			  }
+			  
+			  // GetChain is to get chain
+			  func GetChain(serviceType string, name string) (*Chain, error) {
+			      if name == "" {
+			          name = common.DefaultChainName
+			      }
+			      origin, ok := ChainMap[serviceType+name]
+			      if !ok {
+			          return nil, fmt.Errorf("get chain [%s] failed", serviceType+name)
+			      }
+			      return origin, nil
+			  }
+			  
+			  // 
+			  chainMap := chaninMap[strint]*Chain{
+			      "Provider+rest":  &Chain{
+			            ServiceType: "Provider",
+			            Name: "rest",
+			            Handlers: []Handler{jwt},},
+			      "Provider+default": &Chain{
+			            ServiceType: "Provider",
+			            Name: "default",
+			            Handlers: []Handler{tracing-provider}},,
+			  }
+			  
+			  ```
 	- 初始化 server
 	- 其它
 - 配置路径 ${ChassisConfDir}  > ${ChassisHome}/conf
