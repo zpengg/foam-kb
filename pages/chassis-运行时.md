@@ -169,7 +169,7 @@
 				- 如果注册，停掉心跳发送，退出注册，
 				- 然后调用 server.Shutdown() 来优雅退出。
 			- 监听信号` signal.Notify(c, syscall.SIGINT, syscall.SIGHUP, syscall.SIGTERM, syscall.SIGQUIT, syscall.SIGILL, syscall.SIGTRAP, syscall.SIGABRT)`
-			- Why
+			- Why no kill? #todo
 		-
 	- 其它
 - 配置路径 ${ChassisConfDir}  > ${ChassisHome}/conf
