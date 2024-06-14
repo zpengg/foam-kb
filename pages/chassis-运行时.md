@@ -62,8 +62,10 @@
 		  }
 		  
 		  ```
-		- provider
-		- consumer
+		-
+			- default
+			- provider
+			- consumer
 		- chain
 			- ```go
 			  type Chain struct {
