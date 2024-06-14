@@ -46,8 +46,10 @@
 				  )
 				  ```
 		- [[archaius]]
-	- 插件初始化
-		- 隐式加载，使用各自的init 方法自动执行的，
+	- 插件初始化 #card
+		- 隐式加载
+			- 使用各自的init 方法自动执行的
+			- main 包 import
 		-
 	- 初始化handler chain
 	- 初始化 server
