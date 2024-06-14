@@ -2,8 +2,8 @@
 -
 -
 - ## chassis init
-  配置初始化
-  插件初始化
+-
+- 配置初始化插件初始化
   初始化handler chain
   初始化 server
   其它
