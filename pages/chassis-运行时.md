@@ -62,7 +62,8 @@
 		  }
 		  
 		  ```
-		-
+		- provider
+		- consumer
 	- 初始化 server
 	- 其它
 - 配置路径 ${ChassisConfDir}  > ${ChassisHome}/conf
