@@ -1,3 +1,9 @@
+- What's ORID #card #mind
+  collapsed:: true
+	- O-“Objective”：觀察外在客觀、事實。
+	- R-“Reflective”：重新看內在感受、反應。
+	- I-“Interpretive”：勸釋意義、價值、經驗。
+	- D-“Decisional”：找到決定、行動。
 - O-“Objective”：觀察外在客觀、事實。了解客觀事實的問題句如下：
   collapsed:: true
 	- 看到了什麼？
@@ -20,9 +26,3 @@
 	- 還需要什麼資源或支持才能完成目標？
 	- 未來你要如何應用？
 -
-- What's ORID #card #思维方式
-  collapsed:: true
-	- O-“Objective”：觀察外在客觀、事實。
-	- R-“Reflective”：重新看內在感受、反應。
-	- I-“Interpretive”：勸釋意義、價值、經驗。
-	- D-“Decisional”：找到決定、行動。
