@@ -23,6 +23,6 @@
     "plaintext"
   ],
   "files.exclude": {
-    "_site/**": true
+    "logseq/*": true
   }
 }
