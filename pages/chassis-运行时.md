@@ -4,6 +4,17 @@
 - ## chassis init
 - chassis init Steps #card
 	- 配置初始化
+		- 配置来源
+		  collapsed:: true
+			- ```go
+			     err = archaius.Init( // 初始化配置
+			             archaius.WithCommandLineSource(),
+			             archaius.WithMemorySource(),
+			             archaius.WithENVSource(),
+			             archaius.WithRequiredFiles(requiredFiles),
+			             archaius.WithOptionalFiles(optionalFiles))
+			  ```
+			-
 		- 配置路径
 			- require
 				- global config 对应 conf_path/chassis.yaml
@@ -45,8 +56,6 @@
 				  )
 				  ```
 		- [[archaius]]
-		- 加载来源
-			-
 	- 插件初始化
 	- 初始化handler chain
 	- 初始化 server
@@ -62,7 +71,6 @@
   card-next-schedule:: 2024-06-18T16:45:24.634Z
   card-last-reviewed:: 2024-06-14T16:45:24.634Z
   card-last-score:: 5
-  collapsed:: true
 	- 服务注册
 	- 信号监听
 -
