@@ -181,3 +181,10 @@
 	- 信号监听
 -
 -
+
+信号值动作说明SIGHUP1Term终端控制进程结束(终端连接断开)SIGINT2Term用户发送INTR字符(Ctrl+C)触发SIGQUIT3Core用户发送QUIT字符(Ctrl+/)触发SIGILL4Core非法指令(程序错误、试图执行数据段、栈溢出等)SIGTRAP5CoreTrap指令触发(如断点，在调试器中使用)SIGABRT6Core调用abort函数触发SIGTERM15Term结束程序(可以被捕获、阻塞或忽略)
+
+作者：goodspeed
+链接：https://juejin.cn/post/6900457796018372616
+来源：稀土掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
