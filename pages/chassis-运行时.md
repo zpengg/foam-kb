@@ -8,7 +8,7 @@
 	- 初始化handler chain
 	- 初始化 server
 	- 其它
-- 配置路径 ChassisConfDir  > |{ChassisHome}/conf/
+- 配置路径 ${ChassisConfDir}  > ${ChassisHome}/conf
 -
 -
 - ## chassis run
