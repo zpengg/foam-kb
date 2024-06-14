@@ -10,9 +10,41 @@
 				- microservice config 对应 conf_path/microservice.yaml
 			- optional
 				- ```
-				  
 				  // pkg/util/fileutil/fileutil.go
 				  
+				  const (
+				  	//ChassisConfDir is constant of type string
+				  	ChassisConfDir = "CHASSIS_CONF_DIR"
+				  	//ChassisHome is constant of type string
+				  	ChassisHome = "CHASSIS_HOME"
+				  	//SchemaDirectory is constant of type string
+				  	SchemaDirectory = "schema"
+				  )
+				  
+				  const (
+				  	//Global is a constant of type string
+				  	Global = "chassis.yaml"
+				  	//LoadBalancing is constant of type string
+				  	LoadBalancing = "load_balancing.yaml"
+				  	//RateLimiting is constant of type string
+				  	RateLimiting = "rate_limiting.yaml"
+				  	//Definition is constant of type string
+				  	Definition = "microservice.yaml"
+				  	//Hystric is constant of type string
+				  	Hystric = "circuit_breaker.yaml"
+				  	//PaasLager is constant of type string
+				  	PaasLager = "lager.yaml"
+				  	//TLS is constant of type string
+				  	TLS = "tls.yaml"
+				  	//Monitoring is constant of type string
+				  	Monitoring = "monitoring.yaml"
+				  	//Auth is constant of type string
+				  	Auth = "auth.yaml"
+				  	//Tracing is constant of type string
+				  	Tracing = "tracing.yaml"
+				  	//Router is constant of type string
+				  	Router = "router.yaml"
+				  )
 				  ```
 		- [[archaius]]
 		-
