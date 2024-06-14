@@ -8,7 +8,7 @@
 			- require
 				- global config 对应 conf_path/chassis.yaml
 				- microservice config 对应 conf_path/microservice.yaml
-			- optional
+			- optional 一些标准插件
 				- ```go
 				  const (
 				  	//ChassisConfDir is constant of type string
@@ -45,7 +45,8 @@
 				  )
 				  ```
 		- [[archaius]]
-		-
+		- 加载来源
+			-
 	- 插件初始化
 	- 初始化handler chain
 	- 初始化 server
