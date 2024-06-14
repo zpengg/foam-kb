@@ -1,4 +1,10 @@
 - What's ORID #card #mind
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.36
+  card-next-schedule:: 2024-06-18T16:45:45.336Z
+  card-last-reviewed:: 2024-06-14T16:45:45.337Z
+  card-last-score:: 3
   collapsed:: true
 	- O-“Objective”：觀察外在客觀、事實。
 	- R-“Reflective”：重新看內在感受、反應。

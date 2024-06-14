@@ -13,6 +13,13 @@
 -
 - ## chassis run
 - chassis run steps #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2024-06-18T16:45:24.634Z
+  card-last-reviewed:: 2024-06-14T16:45:24.634Z
+  card-last-score:: 5
+  collapsed:: true
 	- 服务注册
 	- 信号监听
 -
