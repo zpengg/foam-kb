@@ -20,7 +20,7 @@
 	- 還需要什麼資源或支持才能完成目標？
 	- 未來你要如何應用？
 -
-- What's ORID #card
+- What's ORID #card #思维方式
   collapsed:: true
 	- O-“Objective”：觀察外在客觀、事實。
 	- R-“Reflective”：重新看內在感受、反應。
