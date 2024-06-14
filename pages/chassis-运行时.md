@@ -9,9 +9,7 @@
 				- global config 对应 conf_path/chassis.yaml
 				- microservice config 对应 conf_path/microservice.yaml
 			- optional
-				- ```
-				  // pkg/util/fileutil/fileutil.go
-				  
+				- ```go
 				  const (
 				  	//ChassisConfDir is constant of type string
 				  	ChassisConfDir = "CHASSIS_CONF_DIR"
