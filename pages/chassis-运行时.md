@@ -101,7 +101,24 @@
 			  ```
 	- 初始化 server
 		- 根据schema 找到服务，将对应的handle func 使用 handler chain 封装
-			- http -》
+			- http -> invocation -> router
+			- invocation
+				- ```go
+				   inv := &invocation.Invocation{
+				          MicroServiceName:   runtime.ServiceName,
+				          SourceMicroService: common.GetXCSEContext(common.HeaderSourceName, req.Request),
+				          Args:               req,
+				          Reply:              resp,
+				          Protocol:           common.ProtocolRest,
+				          SchemaID:           schema,
+				          OperationID:        operation,
+				          URLPathFormat:      req.Request.URL.Path,
+				          Metadata: map[string]interface{}{
+				              common.RestMethod: req.Request.Method,
+				          },
+				      }
+				  
+				  ```
 		- 启动服务，将服务注册到服务中心
 		- 监听退出信号
 	- 其它
