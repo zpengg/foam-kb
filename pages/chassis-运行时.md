@@ -4,6 +4,9 @@
 - ## chassis init
 - chassis init Steps #card
 	- 配置初始化
+		- 配置路径
+		- [[archaius]]
+		-
 	- 插件初始化
 	- 初始化handler chain
 	- 初始化 server
