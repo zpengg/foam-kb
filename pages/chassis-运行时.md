@@ -5,7 +5,12 @@
 - chassis init Steps #card
 	- 配置初始化
 		- 配置路径
-			-
+			- require
+				- global config 对应 conf_path/chassis.yaml
+				- microservice config 对应 conf_path/microservice.yaml
+			- optional
+				- ```
+				  ```
 		- [[archaius]]
 		-
 	- 插件初始化
