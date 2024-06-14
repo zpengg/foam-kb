@@ -36,4 +36,4 @@
       fmt.Println("exiting")
   }
   ```
-- [[go-chassis]] 关注 1-6
+- [[go-chassis]]
