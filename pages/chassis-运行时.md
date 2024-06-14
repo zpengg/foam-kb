@@ -62,7 +62,7 @@
 		  }
 		  
 		  ```
-		-
+		- 类型
 			- default
 			- provider
 			- consumer
