@@ -163,7 +163,7 @@
 			  }
 			  
 			  ```
-		-
+			- > go http Server 从1.8 之后支持优雅退出。
 		-
 	- 其它
 - 配置路径 ${ChassisConfDir}  > ${ChassisHome}/conf
@@ -181,4 +181,3 @@
 	- 信号监听
 -
 -
-
