@@ -2,6 +2,7 @@
 -
 -
 - ## chassis init
+- chassis init Steps #card
 	- 配置初始化
 	- 插件初始化
 	- 初始化handler chain
@@ -9,7 +10,7 @@
 	- 其它
 -
 - ## chassis run
-- 服务注册
-  信号监听
+- chassis run steps #card
+	-
 -
 -
