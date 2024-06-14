@@ -126,6 +126,44 @@
 				- 返回一个闭包函数。
 		- 启动服务，将服务注册到服务中心
 		- 监听退出信号
+			- ```go
+			  func waitingSignal() {
+			      //Graceful shutdown
+			      c := make(chan os.Signal) // 创建一个os.Signal channel
+			      // 注册要接收的信号
+			      signal.Notify(c, syscall.SIGINT, syscall.SIGHUP, syscall.SIGTERM, syscall.SIGQUIT, syscall.SIGILL, syscall.SIGTRAP, syscall.SIGABRT)
+			      select {
+			      case s := <-c:
+			          openlogging.Info("got os signal " + s.String())
+			      case err := <-server.ErrRuntime:
+			          openlogging.Info("got server error " + err.Error())
+			      }
+			  
+			      // 判断服务是否有注册
+			      if !config.GetRegistratorDisable() {
+			          registry.HBService.Stop()// 停掉心跳服务
+			          openlogging.Info("unregister servers ...")
+			          // 从server center 中退出
+			          if err := server.UnRegistrySelfInstances(); err != nil {
+			              openlogging.GetLogger().Warnf("servers failed to unregister: %s", err)
+			          }
+			      }
+			  
+			      for name, s := range server.GetServers() {
+			          // 遍历服务，调用服务的 stop 方法
+			          openlogging.Info("stopping server " + name + "...")
+			          err := s.Stop()
+			          if err != nil {
+			              openlogging.GetLogger().Warnf("servers failed to stop: %s", err)
+			          }
+			          openlogging.Info(name + " server stop success")
+			      }
+			  
+			      openlogging.Info("go chassis server gracefully shutdown")
+			  }
+			  
+			  ```
+			- /t
 	- 其它
 - 配置路径 ${ChassisConfDir}  > ${ChassisHome}/conf
 -
