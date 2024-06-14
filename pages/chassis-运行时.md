@@ -164,6 +164,10 @@
 			  
 			  ```
 			- > go http Server 从1.8 之后支持优雅退出。
+			- 处理步骤
+				- 判断是否注册到服务中心，
+				- 如果注册，停掉心跳发送，退出注册，
+				- 然后调用 server.Shutdown() 来优雅退出。
 		-
 	- 其它
 - 配置路径 ${ChassisConfDir}  > ${ChassisHome}/conf
