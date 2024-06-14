@@ -119,6 +119,11 @@
 				      }
 				  
 				  ```
+			- WrapHandlerChain()
+				- 取出 Route 中 ResourceFunc （即real handler func）
+				- 将 HttpRequest 转换成 chassis Invocation，
+				- 将Invocation 再添加回 request 中添加到 handler chain 中
+				- 返回一个闭包函数。
 		- 启动服务，将服务注册到服务中心
 		- 监听退出信号
 	- 其它
