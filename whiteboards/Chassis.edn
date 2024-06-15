@@ -85,31 +85,20 @@
 :parentId "666c68fb-bced-4ef2-b9bf-13c37c389314"
 :nonce 1718431878592
 :clipping 0}}
-:block/updated-at 1718431931054})
+:block/updated-at 1718431931054} 
+{:block/content "public:: true"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "666c68fb-bced-4ef2-b9bf-13c37c389314"}
+:block/parent 
+{:block/uuid #uuid "666c68fb-bced-4ef2-b9bf-13c37c389314"}
+:block/properties 
+{:public true}
+:block/uuid #uuid "7c2bb51a-17cb-46bb-97ce-babd5c29b19e"})
 :pages (
 {:block/uuid #uuid "666c68fb-bced-4ef2-b9bf-13c37c389314"
 :block/properties 
-{:ls-type :whiteboard-page
-:logseq.tldraw.page 
-{:id "666c68fb-bced-4ef2-b9bf-13c37c389314"
-:name "chassis"
-:bindings 
-{}
-:nonce 1
-:assets [
-{:id "d04497f0-2add-11ef-ad7a-0d16ae75da0b"
-:type "image"
-:src "../assets/image_1718431764132_0.png"
-:size [1249 390]} 
-{:id "f0860a30-2add-11ef-ad7a-0d16ae75da0b"
-:type "image"
-:src "../assets/image_1718431818079_0.png"
-:size [1341 4708]} 
-{:id "143c30d0-2ade-11ef-ad7a-0d16ae75da0b"
-:type "image"
-:src "../assets/image_1718431878134_0.png"
-:size [1181 2121]}]
-:shapes-index ("d0453430-2add-11ef-ad7a-0d16ae75da0b" "d227d6e0-2add-11ef-ad7a-0d16ae75da0b" "f088f060-2add-11ef-ad7a-0d16ae75da0b" "143e2ca0-2ade-11ef-ad7a-0d16ae75da0b")}}
+{:public true}
 :block/updated-at 1718432004553
 :block/created-at 1718380795848
 :block/type "whiteboard"
