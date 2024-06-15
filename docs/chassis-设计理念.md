@@ -1,6 +1,7 @@
-# chassis-设计理念
-- ## Meta 
-  [定义 Go 语言云应用开发的“通信协议”](https://juejin.cn/post/6901066819113910280)
+public:: true
+
+- # chassis-设计理念
+- [定义 Go 语言云应用开发的“通信协议”](https://juejin.cn/post/6901066819113910280)
   作者：二手雄狮
   链接：https://juejin.cn/post/6901066819113910280
   来源：稀土掘金
