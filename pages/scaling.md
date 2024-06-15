@@ -3,4 +3,4 @@
 -
 - Pre FulFIilment  - PCU
 - Fulfilment
-	- Evaluate Range: A
+	- Evaluate Range: A week After Promotion
