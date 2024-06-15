@@ -1,1 +1,2 @@
-- 市场比例(%) * instance / pod_cpu_max
+- ADO ratio * instance / pod_cpu_max_in_promotion = predict instance
+-
