@@ -1,2 +1,2 @@
 - ADO ratio * instance / pod_cpu_max_in_promotion = predict instance
--
+- PCU upstream
