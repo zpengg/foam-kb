@@ -2,6 +2,7 @@
 -
 -
 - ## chassis init
+  id:: 666d2f25-db2d-4bad-bb43-618efe8d7f28
 - chassis init Steps #card
 	- 配置初始化
 	  collapsed:: true
@@ -176,6 +177,7 @@
 -
 -
 - ## chassis run
+  id:: 666d2f25-7b66-4ae8-a2e8-f27a3d4bd2c5
 - chassis run steps #card
   card-last-interval:: 4
   card-repeats:: 1

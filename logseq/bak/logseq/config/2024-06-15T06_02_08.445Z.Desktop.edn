@@ -136,7 +136,7 @@
 
  ;; Set the default location for storing notes.
  ;; Default value: "pages"
- :pages-directory "docs"
+ ;; :pages-directory "pages"
 
  ;; Set the default location for storing journals.
  ;; Default value: "journals"
@@ -419,6 +419,4 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :journal/page-title-format "yyyy-MM-dd"
- :graph/settings {:journal? false
- :builtin-pages? true}}
+ :journal/page-title-format "yyyy-MM-dd"}
