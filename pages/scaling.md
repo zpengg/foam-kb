@@ -1,8 +1,13 @@
 - ADO ratio * instance / pod_cpu_max_in_promotion = predict instance
 - PCU upstream
 -
-- Pre FulFIilment  - PCU]
+- Pre FulFIilment  - PCU
 	- Evaluate Range: A day After Promotion
 - Fulfilment
 	- Evaluate Range: A week After Promotion
 	-
+-
+- 预案
+	- 降级
+		- 清理任务
+			-
