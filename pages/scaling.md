@@ -1,1 +1,1 @@
-- 市场比例
+- 市场比例(%) * instance / pod_cpu_max
