@@ -24,7 +24,7 @@ jobs:
       - name: Logseq Publish 🚩
         uses: zhaochunqi/starred-to-logseq-action@v1.0.1
       - name: add a nojekyll file
-        run: touch $GITHUB_WORKSPACE/www/.nojekyll
+        run: mkdir -p www && touch www/.nojekyll
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
