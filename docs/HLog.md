@@ -1,0 +1,15 @@
+- 当regionserver在接收Put请求时，会先将请求的数据写WAL([[write ahead log]])， 然后再将请求数据写入[[MemStore]]中，WAL是保证Hbase的crash能力，当Hbase因为故障宕机，可以从WAL中读取日志来恢复MemStore的主键，这一点跟MySql的[[redo log]]十分相似
+- [[WAL]]日志也是写入到磁盘上的，如果磁盘损坏，还是回导致数据丢失，而[[HDFS]]有备份的功能，Hbase会依赖HDFS来保证WAL和StoreFile数据完整安全
+-
+- step
+	- 获取Region操作锁。（读写锁）
+	- 一次获取各行行锁。
+	- 写入到MemStore中。（一个内存排序集合）
+	- 释放以获取的行锁。
+	- 写数据到WAL中。（Write-Ahead-Log）
+	- 释放Region锁。
+-
+-
+-
+- 数据在更新时首先写入 HLog(WAL Log)，再写入内存(MemStore)中，MemStore 中的数据是排序的，当 MemStore 累计到一定阈值时，就会创建一个新的 MemStore，并且将老的 MemStore 添加到 flush 队列，由单独的线程 flush 到磁盘上，成为一个 StoreFile。于此同时，系统会在 ZooKeeper 中记录一个 redo point，表示这个时刻之前的变更已经持久化了。当系统出现意外时，可能导致内存(MemStore)中的数据丢失，此时使用 HLog(WAL Log)来恢复 checkpoint 之后的数据。
+- StoreFile 是只读的，一旦创建后就不可以再修改。因此 **HBase 的更新/修改其实是不断追加 的操作**。当一个 Store 中的 StoreFile 达到一定的阈值后，就会进行一次合并(minor_compact, major_compact)，将对同一个 key 的修改合并到一起，形成一个大的 StoreFile，当 StoreFile 的大小达到一定阈值后，又会对 StoreFile 进行 split，等分为两个 StoreFile。由于对表的更新是不断追加的，compact 时，需要访问 Store 中全部的 StoreFile 和 MemStore，将他们按 rowkey 进行合并，由于 StoreFile 和 MemStore 都是经过排序的，并且 StoreFile 带有内存中索引，合并的过程还是比较快。

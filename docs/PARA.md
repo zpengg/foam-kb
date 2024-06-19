@@ -1,0 +1,13 @@
+- [The-PARA-Method-A-Universal-System-for-Organizing-Digital-Information](https://www.notion.so/pmthinking/The-PARA-Method-A-Universal-System-for-Organizing-Digital-Information-e623abc48c984507889878a478e92ffe)
+- ### Project | 项目
+	- 一个项目是「**一系列与一个目标相关的任务，有一个最后期限。**」
+	- 例如： 完成 App 的模型；研发的项目计划；执行业务开发活动；撰写博客文章；确定最终版产品说明书；参加会议
+- ### Area | 领域
+	- 一个领域是「一个有明确标准的活动范围，随着时间的推移需要维持一个标准（或者状态）」
+	- 例如：健康；财务；专业发展；旅游；爱好；朋友；公寓；产品开发; 写作
+- ### Resource  | 资源
+	- 资源是「持续感兴趣的话题或主题」
+	- 例如：习惯形成；项目管理；超人主义；咖啡；音乐；园艺；在线营销；SEO；室内设计；建筑；笔记
+- ### Archives | 归档
+	- 归档区包括「其他三类已经完成，需要归档的项目」
+	- 例如: 已经完成或变得不活跃的项目；不再致力于维护的能力区；不再感兴趣的资源

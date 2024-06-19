@@ -1,0 +1,13 @@
+- 设计优点
+	- 接口解耦。通过暴露驱动接口，sql 包内部实现连接池管理，各个数据库驱动不需要关系连接池内部实现，实现接口解耦
+	- 通过 channel 传输数据，而不是共享数据。比如：创建新的连接用的 openCh 和 开启清理连接的 clearCh，这也是 Golang 推荐的做法
+	- 动态调整。比如：归还连接才会开启一次连接清理而不是一开始就开启清理，以及调整连接池配置会实时更新等
+	- DB Stats 暴露连接池监控数据，可以让开发者了解线上连接池使用情况，从而进一步优化
+-
+- [[sql 链接池参数]]
+-
+- 参考链接
+	- [GitHub - go-sql-driver/mysql: Go MySQL Driver is a MySQL driver for Go&#39;s golang database/sql package](https://github.com/go-sql-driver/mysql)
+	- [GO database/sql 连接池源码分析_源码分析_非晓为骁_InfoQ写作社区](https://xie.infoq.cn/article/c705a7821cb0d63f8bd381276)
+	- [谈数据库驱动和连接池设计](https://zhuanlan.zhihu.com/p/99699351)
+	- [链接池流程图](https://www.processon.com/view/link/5be92f8ce4b0d74dc53b46a5)

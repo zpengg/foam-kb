@@ -1,0 +1,13 @@
+- Reversing
+	- 如果经初步设计出的RowKey在数据分布上不均匀，但RowKey尾部的数据却呈现出了良好的随机性，此时，可以考虑将RowKey的信息翻转，或者直接将尾部的bytes提前到RowKey的前部。
+- Salting
+	- Salting的原理是在原RowKey的前面添加固定长度的随机bytes，随机bytes能保障数据在所有Regions间的负载均衡。缺点：既然是随机bytes，基于原RowKey查询时无法获知随机bytes信息是什么，也就需要去各个可能的Regions中去查看。可见Salting对于读取是利空的。
+- Hashing
+	- 基于RowKey的完整或部分数据进行Hash，而后将Hashing后的值完整替换原RowKey或部分替换RowKey的前缀部分。缺点是与Reversing类似，Hashing也不利于Scan，因为打乱了原RowKey的自然顺序。
+-
+-
+- 实践
+	- Hash + 原key
+	- 时间 scan
+-
+-

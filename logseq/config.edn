@@ -26,7 +26,7 @@
  ;; Default value: "MMM do, yyyy"
  ;; e.g., "Jan 19th, 2038"
  ;; Example usage e.g., "Tue 19th, Jan 2038"
- ;; :journal/page-title-format "EEE do, MMM yyyy"
+ ;; :journal/page-title-format "yyyy-mm-dd"
 
  ;; Specify the journal filename format using a valid date format string.
  ;; !Warning:
@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["mind"]
+ :favorites ["database" "mind"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -421,4 +421,4 @@
  :file/name-format :triple-lowbar
  :journal/page-title-format "yyyy-MM-dd"
  :graph/settings {:journal? false
- :builtin-pages? true}}
+ :builtin-pages? false}}

@@ -1,0 +1,5 @@
+- golang 的依赖注入框架有两类
+	- 一类是通过反射在运行时进行依赖注入，典型代表是 uber 开源的 [[dig]] 和 Facebook 的 inject，使用 dig 功能会强大一些，它们都是使用反射机制来实现运行时依赖注入(runtime dependency injection), 但是缺点就是错误只能在运行时才能发现
+	- 一类是通过 [[go generate]] 进行代码生成，典型代表是 Google 开源的 [[wire]]，wire 是采用代码生成的方式来达到编译时依赖注入(compile-time dependency injection)， 使用 wire 的缺点是功能限制多一些，但是好处就是编译的时候就可以发现问题，生成的代码和我们自己手写相关代码差不太多
+-
+-

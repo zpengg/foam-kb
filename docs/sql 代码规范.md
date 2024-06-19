@@ -1,0 +1,12 @@
+- 代码功能完善。
+- 代码行清晰、整齐，代码行的整体层次分明、结构化强。
+- 代码编写充分考虑执行速度最优的原则。
+- 代码中需要添加必要的注释，以增强代码的可读性。
+- 规范要求并非强制性约束开发人员的代码编写行为。实际应用中，在不违反常规要求的前提下，允许存在可以理解的偏差。
+- SQL代码中应用到的所有SQL关键字、保留字都需使用全大写或小写，例如select/SELECT、from/FROM、where/WHERE、and/AND、or/OR、union/UNION、insert/INSERT、delete/DELETE、group/GROUP、having/HAVING和count/COUNT等。不能使用大小写混合的方式，例如Select或seLECT等方式。
+- 4个空格为1个缩进量，所有的缩进均为1个缩进量的整数倍，按照代码层次对齐。
+- 禁止使用`select *`操作，所有操作必须明确指定列名。
+- 对应的括号要求在同一列的位置上。
+-
+- [SQL代码编码原则和规范 - 大数据开发治理平台 DataWorks - 阿里云](https://www.alibabacloud.com/help/zh/dataworks/user-guide/sql-coding-guidelines-and-specifications)
+-

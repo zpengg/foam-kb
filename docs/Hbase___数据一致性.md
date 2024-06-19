@@ -1,0 +1,7 @@
+- ![写流程](https://cshihong.github.io/2018/05/17/HBase%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86/%E5%86%99%E6%B5%81%E7%A8%8B.png)
+-
+- Hbase的数据一致处理主要分为两个方面
+	- 一个是[[HLog]] 原理, WAL，
+	- [[HDFS]] 的副本写
+-
+-

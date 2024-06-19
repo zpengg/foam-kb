@@ -1,0 +1,28 @@
+- 方法1：最大并发量
+- 通过应用的tps、rt、并发数等参数，计算出当前应用需要访问到数据库的并发量，因此来确定MaxOpenConns
+-
+- 方法2：CPU核数法
+- 一般应用最佳线程数大小=2*cpu核数+1。
+- 但是golang中使用的是轻量级协程，因此连接数的倍数可以更大。
+	- 根据sql的快慢、事务的长短、实例Pod数目多少等，该倍数可取8、10、12。一般对于同一个应用，实例Pod数越多，倍数可以取越小；实例Pod数越少，倍数可以取越大。
+-
+- MaxOpenConns 经验值 300
+- MaxIdleConns建议设置为MaxOpenConns的一半。
+- ConnMaxLifeTime建议设置为3600S，
+- ConnMaxIdleTime建议设置为60S。
+-
+- MaxOpenConns
+	- 设置太大：1.消耗过多DB链接，甚至导致数据库链接达到Max connections   2.占用应用内存
+	- 设置太小：导致应用需要频繁等待数据库可用连接
+- MaxIdleConns
+	- 设置太大: 问题和MaxOpenConns基本类似
+	- 设置太小: 导致应用需要频繁创建连接，对性能存在一定影响
+- ConnMaxLifeTime
+	- 设置太大: 1.问题和MaxOpenConns基本类似  2.因为mysql本身有wait_timeout的设置，如果超时wait_timeout连接会被mysql关闭，导致应用客户端访问的时候出现invalid connection的错误
+	- 设置太小: 导致应用需要频繁创建连接，对性能存在一定影响
+- ConnMaxIdletime
+	- 设置太大:  占用过多一直空闲的连接
+	- 设置太小: 导致Idle连接很快被释放，在需要时又重新创建影响性能
+-
+- [[Thread Running]]
+-

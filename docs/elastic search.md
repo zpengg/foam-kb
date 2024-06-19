@@ -1,0 +1,8 @@
+- [es基本概念介绍](https://leonlibraries.github.io/2017/04/27/ElasticSearch%E5%86%85%E9%83%A8%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90%E4%B8%89/)
+- [es 对倒排索引的索引](https://zhuanlan.zhihu.com/p/280676094)
+- [搜索引擎Lucene（2）：索引文件结构及格式 - 简书](https://www.jianshu.com/p/7b270acf9ba7)
+- [详解Elasticsearch和Lucene的底层数据的结构、多维度阐述ES查询快、FST的数据结构原理_es lucene dsl原理-CSDN博客](https://blog.csdn.net/qq_34820803/article/details/104798716)
+- [关于 Elasticsearch 的查询缓存，你想知道的都在这里 | easyice](https://www.easyice.cn/archives/367)
+- [最小编辑距离算法 Edit Distance（经典DP）-CSDN博客](https://blog.csdn.net/baodream/article/details/80417695)
+- [Lucene学习总结之七：Lucene搜索过程解析5 - 刘超觉先 - 博客园](https://www.cnblogs.com/forfuture1978/archive/2010/04/04/1704258.html)
+- [搜索引擎Lucene（2）：索引文件结构及格式 - 简书](https://www.jianshu.com/p/7b270acf9ba7)

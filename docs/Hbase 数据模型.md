@@ -1,0 +1,28 @@
+- namespace
+	- **Table**：表，所有的表都是命名空间的成员，即表必属于某个命名空间，如果没有指定，则在default默认的命名空间中。
+	- **RegionServer group：**一个命名空间包含了默认的RegionServer Group。
+	- **Permission：**权限，命名空间能够让我们来定义访问控制列表ACL（Access Control List）。例如，创建表，读取表，删除，更新等等操作。
+	- **Quota：**限额，可以强制一个命名空间可包含的region的数量。
+- 表
+	- HBase采用表来组织数据，表由行和列组成，列划分为若干个列族。
+- Cell
+	- 一个Cell, 只需要5项数据拼成Key: <表名称, 主键名称, 列簇名称, 列名称, 时间戳>
+		- Put操作既是一个插入操作也可以是一个修改操作，每个Cell都有自己的版本。删除操作不会真的做删除，只是写入一个删除的标志。 任何查询都不会返回有有删除标记的Cell.
+		- Get操作可以任意指定的版本的数据。如果请求没有指定版本号，会返回最新的版本。HBase允许用户配置最多允许多少版本同时存在，HBase默认为同一个Cell最多存储3个版本。当超过3个版本后，最老版本的Cell会被最终清理。
+- RowKey
+	- [[RowKey Sharding]]
+- Region(RowKey Range)
+	- [[Hbase/Region]]
+	- 主要的设计思想是按照主键(row key)分片数据。针对数据做水平分片（horizontal shard）， 根据主键的范围(row key range)分片。
+	- 不同主键范围（row key range）下的数据被分配到不同的服务器中。
+	- 每台服务器的数据是全体数据的子集。
+	- HBase实际上是BigTable存储系统的一个开源实现，Bigtable是由Google开发的分布式存储系统，用来管理可扩展的，大容量的结构化数据。
+- Region Server
+	- 主键(row key)从axxx到gxxx被分配到了一台区域服务器(region server) R1上面， 这个table有2个列簇:CF1和CF2， 相当于2个独立的文件，都存储在HDFS上
+- 列簇 Col Family
+	- 列簇文件里面的数据按照Cell的方式存储。 每个Cell被称为一个键值对(KeyValue)。 Key包括的项目比较多，有主键(rowkey)，列簇的名称(column family), column qualifier和时间戳(timestamp)。 由这四项的组成一个Key，通过这个Key就可以在列簇文件中查询到Value.
+- 列限定符Col Qualifier
+	- 列族里的数据通过列限定符（或列）来定位。
+-
+- Sharding 算法
+	- CRC32
