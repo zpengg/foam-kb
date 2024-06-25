@@ -1,0 +1,2 @@
+- ![](https://www.martinfowler.com/bliki/images/cqrs/cqrs.png)
+- [CQRS](https://www.martinfowler.com/bliki/CQRS.html)

@@ -1,0 +1,4 @@
+- 得物DTS :  [https://tech.dewu.com/article?id=71](https://tech.dewu.com/article?id=71)
+- 阿里DTS：[https://www.alibabacloud.com/help/zh/dts/product-overview/?spm=a2c63.p38356.0.0.290e3fe2fDif9Q](https://www.alibabacloud.com/help/zh/dts/product-overview/?spm=a2c63.p38356.0.0.290e3fe2fDif9Q)
+- 腾讯DTS:[https://cloud.tencent.com/product/dts](https://cloud.tencent.com/product/dts)
+- mysql binglog 处理客户端：[https://github.com/go-mysql-org/go-mysql](https://github.com/go-mysql-org/go-mysql)

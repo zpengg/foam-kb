@@ -1,0 +1,10 @@
+- DCI: Data, Context, Interactions
+- DCI 表示模型应该是贫血的，但您可以将角色应用于模型，从而为您的模型提供（可切换的）功能
+-
+- DDD 表示实体的功能应该是该实体的一部分
+	- 这导致类具有许多在不同上下文中使用的函数并破坏了单一责任规则。
+	- 例如，如果我是一个实体：一个人，我想纳税，那么 Person 类将获得 payTaxes 函数。
+	- 现在，如果我想和儿子一起玩，Person 类将获得 playWithSon 函数。
+	- 你知道它是怎么回事吗？一段时间后，Person 类将具有许多在上下文方面彼此不相关的函数。
+-
+- [GitHub - ruanrunxue/DCI-Architecture-Implementation: DCI Architecture Implementation](https://github.com/ruanrunxue/DCI-Architecture-Implementation)
