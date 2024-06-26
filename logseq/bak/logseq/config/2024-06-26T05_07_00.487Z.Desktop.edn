@@ -116,7 +116,7 @@
  ;; Publish all pages within the Graph
  ;; Regardless of whether individual pages have been marked as public.
  ;; Default value: false
- ;; :publishing/all-pages-public? false
+ :publishing/all-pages-public? true
 
  ;; Define the default home page and sidebar status.
  ;; If unspecified, the journal page will be loaded on startup and the right sidebar will stay hidden.
@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["go gc" "database" "mind"]
+ :favorites ["database" "mind"]
 
  ;; Set flashcards interval.
  ;; Expected value:
