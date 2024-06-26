@@ -188,6 +188,7 @@ public:: true
   card-next-schedule:: 2024-06-18T16:45:24.634Z
   card-last-reviewed:: 2024-06-14T16:45:24.634Z
   card-last-score:: 5
+  collapsed:: true
 	- 服务注册
 	- 信号监听
 		- [[go 优雅启停]]

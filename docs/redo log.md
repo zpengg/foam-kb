@@ -1,0 +1,49 @@
+- >The redo log is a write ahead log of changes applied to contents of data pages. It provides durability for all changes applied to the pages. In case of crash, it is used to recover modifications to pages that were modified but have not been flushed to disk.
+- [Innodb引擎 · 基础模块篇(三) · 详解redo log存储结构 - 掘金](https://juejin.cn/post/6895265596985114638)
+- [[WAL]]
+- [[InnoDB]] 特有
+-
+-
+- 单条结构
+	- ![redo log通用日志类型](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1d15446b680e4631962071ef4e04149e~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp){:height 161, :width 780}
+-
+- 组成
+	- 内存中 [[redo log buffer]]
+	- 磁盘中 [[redo log file]]
+-
+- MTR
+	- redo log 是以组的形式来写入的
+	- InnoDB把这种对底层页面的一次原子访问称作一个[[Mini Transaction]]，缩写MTR，一个MTR就对应一组redo log。
+	-
+- redo log 写入方式
+	- 以组的形式来写入的,
+	- [[redo log buffer]]
+	- ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/22dfd558ce1c4504a0d1fb3439c906e0~tplv-k3u1fbpfcp-watermark.awebp)
+-
+- 刷盘策略
+	- innodb_flush_log_at_trx_commit = 0：
+		- 延迟写，延迟刷
+	- innodb_flush_log_at_trx_commit = 1：
+		- 实时写，实时刷
+		- 每次更新都刷
+	- innodb_flush_log_at_trx_commit = 2
+		- 推荐值
+		- 实时写，延迟刷 flush 1/s
+		- 事务提交之前会把 redo log写到 os cache中
+		- EdgeCase
+			- MySQL所在的服务器挂掉了，也就是操作系统都挂了
+-
+-
+-
+- 记录形式： 循环写文件
+  id:: 66743b96-1fa2-4b9d-be03-3c40cb010299
+	- [[redo log buffer]](内存中)是由首尾相连的四个文件组成的，
+		- ib_logfile_1、ib_logfile_2、ib_logfile_3、ib_logfile_4
+		- write pos表示当前写入记录位置(写入磁盘的数据页的逻辑序列位置)
+		- [[check point]] 表示刷盘(写入磁盘)后对应的位置。
+		- write pos到check point之间的部分用来记录新日志，也就是留给新记录的空间。
+		- check point到write pos之间是待刷盘的记录，如果不刷盘会被新记录覆盖。
+	- redo log的大小是固定。
+	- 它采用循环写的方式记录，当写到结尾时，会回到开头循环写日志。如下图（图片来源网络）：
+	- ![redo log 循环写入图](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/07004f0c39464a5baa4754cb2556bbd5~tplv-k3u1fbpfcp-watermark.awebp)
+	  id:: 667441bc-2436-4205-9f99-72a1928de49e

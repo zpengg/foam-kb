@@ -1,0 +1,8 @@
+-
+-
+- ## load balancer
+	- ![Traffic flow with a load balancer](https://cdn.haproxy.com/documentation/assets/img/with-a-loadbalancer.png?v=1718721900055)
+- ## 负载均衡
+	- [[HAProxy/负载均衡策略]]
+-
+-

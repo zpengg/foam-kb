@@ -1,1 +1,43 @@
+- 语言基础
+	- [[Go 基本类型]]
+	- [[go/array]] & [[go/slice]]
+	- [[go/error]]
+	- [[go/panic]]
+	- [[go/strings]]
+	- [[go/rune]]
+	- [[go/map]]
+	- [[go/type]]
+	- [[go/interface]]
+- 并发
+	- [[go/channel]]
+	- [[go/goroutine]]
+-
+- [[defer]]
+- 内存模型
+	- [[go 内存]]
+	- [[逃逸分析]]
+	- [[go GC]]
+- Goroutine
+	- [[Goroutine 内存模型]]
+-
+- 工程
 - [[go 依赖注入]]
+- [[go mock/stub 测试]]
+- [[go fuzzing]]
+- [[go build tags]]
+-
+- 开源
+	- [[singleflight]]
+-
+- 版本
+	- #go1.20
+		- 手动管理内存 [[Arena]]
+-
+- 资料
+- [Go 语言编译过程概述 | Go 语言设计与实现](https://draveness.me/golang/docs/part1-prerequisite/ch02-compile/golang-compile-intro/)
+- [The golang.design Initiative](https://golang.design/)
+- [数组与切片有什么异同 | Go 程序员面试笔试宝典](https://golang.design/go-questions/slice/vs-array/)
+- https://github.com/zeromicro/zero-examples
+- [介绍 | Go设计实现内幕](https://www.hitzhangjie.pro/go-internals/)
+-
+-

@@ -1,0 +1,14 @@
+- ![Buffer Pool结构](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9a85d10308c844d0b0e8df5e85d38099~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
+- 三层结构
+	- instance
+	- [[chunk]], 每次以chunk为单位向操作系统申请空间
+	- buf_block_t + page
+-
+- [[Change Buffer]]
+- 链表
+	- LRU + 冷热数据过滤
+	- [[free 链表]] 没修改过的页
+	- [[flush 链表]] 修改过的页
+- chunk的大小可以自定义设置，默认是128M
+-
+-

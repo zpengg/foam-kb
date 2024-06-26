@@ -1,5 +1,5 @@
 {:blocks (
-{:block/created-at 1718432002770
+{:block/created-at 1718437426031
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -17,13 +17,13 @@
 :parentId "666c68fb-bced-4ef2-b9bf-13c37c389314"
 :nonce 1718431764436
 :clipping 0}}
-:block/updated-at 1718432002770} 
-{:block/created-at 1718432004553
+:block/updated-at 1718437426031} 
+{:block/created-at 1718437429304
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:blockType "B"
-:stroke ""
+:stroke "blue"
 :rotation 0
 :collapsed false
 :borderRadius 8
@@ -31,7 +31,7 @@
 :scale [1 1]
 :pageId "666c61e8-fea2-4442-aa09-724732f1bcb4"
 :scaleLevel "md"
-:fill ""
+:fill "blue"
 :compact true
 :isAutoResizing false
 :type "logseq-portal"
@@ -44,9 +44,9 @@
 :point [128 72]
 :parentId "666c68fb-bced-4ef2-b9bf-13c37c389314"
 :collapsedHeight 0
-:nonce 1718431768274}}
-:block/updated-at 1718432004553} 
-{:block/created-at 1718431906013
+:nonce 1718431768275}}
+:block/updated-at 1718437429304} 
+{:block/created-at 1718437426032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -65,8 +65,8 @@
 :parentId "666c68fb-bced-4ef2-b9bf-13c37c389314"
 :nonce 1718431818686
 :clipping 0}}
-:block/updated-at 1718431906013} 
-{:block/created-at 1718431931054
+:block/updated-at 1718437426032} 
+{:block/created-at 1718437426032
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -85,7 +85,7 @@
 :parentId "666c68fb-bced-4ef2-b9bf-13c37c389314"
 :nonce 1718431878592
 :clipping 0}}
-:block/updated-at 1718431931054} 
+:block/updated-at 1718437426032} 
 {:block/content "public:: true"
 :block/format :markdown
 :block/left 
@@ -98,8 +98,28 @@
 :pages (
 {:block/uuid #uuid "666c68fb-bced-4ef2-b9bf-13c37c389314"
 :block/properties 
-{:public true}
-:block/updated-at 1718432004553
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "666c68fb-bced-4ef2-b9bf-13c37c389314"
+:name "chassis"
+:bindings 
+{}
+:nonce 1
+:assets [
+{:id "d04497f0-2add-11ef-ad7a-0d16ae75da0b"
+:type "image"
+:src "../assets/image_1718431764132_0.png"
+:size [1249 390]} 
+{:id "f0860a30-2add-11ef-ad7a-0d16ae75da0b"
+:type "image"
+:src "../assets/image_1718431818079_0.png"
+:size [1341 4708]} 
+{:id "143c30d0-2ade-11ef-ad7a-0d16ae75da0b"
+:type "image"
+:src "../assets/image_1718431878134_0.png"
+:size [1181 2121]}]
+:shapes-index ("d0453430-2add-11ef-ad7a-0d16ae75da0b" "d227d6e0-2add-11ef-ad7a-0d16ae75da0b" "f088f060-2add-11ef-ad7a-0d16ae75da0b" "143e2ca0-2ade-11ef-ad7a-0d16ae75da0b")}}
+:block/updated-at 1718437429303
 :block/created-at 1718380795848
 :block/type "whiteboard"
 :block/name "chassis"

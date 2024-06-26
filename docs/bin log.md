@@ -1,0 +1,7 @@
+- 刷盘策略，通过sync_binlog参数控制：
+	- sync_binlog = 0 ：
+		- 每次提交事务前将binlog写入os cache，由操作系统控制什么时候刷到磁盘
+	- sync_binlog =1 ：
+		- 采用同步写磁盘的方式来写binlog，不使用os cache来写binlog
+	- sync_binlog = N ：
+		- 当每进行n次事务提交之后，调用一次fsync将os cache中的binlog强制刷到磁盘

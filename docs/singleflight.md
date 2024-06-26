@@ -1,0 +1,4 @@
+- [singleflight | 李文周的博客](https://www.liwenzhou.com/posts/Go/singleflight/)
+-
+- 防止缓存击穿
+- 将并发调用合并成一个调用的特点

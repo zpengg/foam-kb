@@ -1,0 +1,604 @@
+{:blocks (
+{:block/content "redo log"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "666cf62d-bd57-4c7f-8032-bbb364f8d631"}
+:block/parent 
+{:block/uuid #uuid "666cf62d-bd57-4c7f-8032-bbb364f8d631"}
+:block/properties 
+{}
+:block/uuid #uuid "6674ac8c-0f58-41a4-97dc-b839f3219543"} 
+{:block/created-at 1718929099033
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 1
+:scale [1 1]
+:refs ["redo log"]
+:pageId "6674ac8c-0f58-41a4-97dc-b839f3219543"
+:scaleLevel "lg"
+:fill ""
+:compact true
+:isAutoResizing false
+:type "logseq-portal"
+:size [400 121.23046875]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "4416fbd0-2f54-11ef-83da-25c9c69a919f"
+:noFill false
+:isLocked false
+:point [-1224 -592]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:collapsedHeight 0
+:nonce 1718922379889}}
+:block/updated-at 1718929099033} 
+{:block/created-at 1718947337288
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 2
+:scale [1 1]
+:pageId "66743b96-1fa2-4b9d-be03-3c40cb010299"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [816 912]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "c386bb80-2f54-11ef-83da-25c9c69a919f"
+:noFill false
+:point [-560 344]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:collapsedHeight 0
+:nonce 1718922657757}}
+:block/updated-at 1718947337288} 
+{:block/created-at 1718948744580
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 3
+:scale [1 1]
+:pageId "check point"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [928 1160.999839396948]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "6674ae2c-9057-4440-a689-623db8b926ff"
+:noFill false
+:point [1880 2384]
+:parentId "page"
+:collapsedHeight 0
+:nonce 1718922797155}}
+:block/updated-at 1718948744580} 
+{:block/created-at 1718947337310
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 4
+:scale [1 1]
+:pageId "redo log file"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [792 1008]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "6674ae3e-dc7b-496a-a4d2-8152daaa5abb"
+:noFill false
+:point [376 1560]
+:parentId "page"
+:collapsedHeight 0
+:nonce 1718922814943}}
+:block/updated-at 1718947337310} 
+{:block/created-at 1718947337320
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 5
+:scale [1 1]
+:pageId "redo log block"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [656 996.71875]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "6674aef4-038c-44bd-9bce-673e72096b77"
+:noFill false
+:point [1904 1232]
+:parentId "page"
+:collapsedHeight 0
+:nonce 1718922997358}}
+:block/updated-at 1718947337320} 
+{:block/created-at 1718947337330
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 6
+:scale [1 1]
+:pageId "redo log block header"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [944 663]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "6674af0b-2eec-4b29-be50-fac2e393957d"
+:noFill false
+:point [3024 1424]
+:parentId "page"
+:collapsedHeight 0
+:nonce 1718923020749}}
+:block/updated-at 1718947337330} 
+{:block/created-at 1718929099033
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 7
+:scale [1 1]
+:refs ["Writing to the redo log"]
+:type "image"
+:assetId "d51d12c0-2f56-11ef-83da-25c9c69a919f"
+:size [848.4972431520828 511.3543208361149]
+:opacity 1
+:id "d51daf00-2f56-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [-552 -240]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718923546621
+:clipping 0}}
+:block/updated-at 1718929099033} 
+{:block/created-at 1718929099029
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 8
+:scale [1 1]
+:type "image"
+:assetId "d215de80-2f5c-11ef-83da-25c9c69a919f"
+:size [1265 413]
+:opacity 1
+:id "d2162ca0-2f5c-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [-968 1656]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718926118442
+:clipping 0}}
+:block/updated-at 1718929099029} 
+{:block/created-at 1718947337342
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 9
+:scale [1 1]
+:pageId "Mini Transaction"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [680 461]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "fe3b98b0-2f5c-11ef-83da-25c9c69a919f"
+:noFill false
+:point [-568 -704]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:collapsedHeight 0
+:nonce 1718926192571}}
+:block/updated-at 1718947337342} 
+{:block/created-at 1718948744368
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 10
+:scale [1 1]
+:type "image"
+:assetId "50eaef60-2f5e-11ef-83da-25c9c69a919f"
+:size [476.6013773405207 361.94727241426335]
+:opacity 1
+:id "50ebd9c0-2f5e-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [-1224 -216]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718926760348
+:clipping 0}}
+:block/updated-at 1718948744368} 
+{:block/created-at 1718948744364
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 11
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "5906e4b0-2f5e-11ef-83da-25c9c69a919f"
+:fontWeight 400
+:noFill true
+:point [-746.4 -30.2]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]
+:bindingId "59069690-2f5e-11ef-83da-25c9c69a919f"}
+:end 
+{:id "end"
+:canBind true
+:point [190.4 3.84]
+:bindingId "5906bda0-2f5e-11ef-83da-25c9c69a919f"}}
+:decorations 
+{:end "arrow"}
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718926773926
+:italic false}}
+:block/updated-at 1718948744364} 
+{:block/created-at 1718948744592
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 12
+:scale [1 1]
+:pageId "redo log buffer"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [1032 1182.0625074864315]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "6674be36-5ec8-42e4-af69-e3d5bf72a4d6"
+:noFill false
+:point [368 352]
+:parentId "page"
+:collapsedHeight 0
+:nonce 1718926903445}}
+:block/updated-at 1718948744592} 
+{:block/created-at 1718948744368
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 13
+:scale [1 1]
+:refs ["redo log 各线程同步机制"]
+:type "image"
+:assetId "72321c60-2f5f-11ef-83da-25c9c69a919f"
+:size [787.9767965222246 406.0269326524241]
+:opacity 1
+:id "723306c0-2f5f-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [-1432 400]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718927245773
+:clipping 0}}
+:block/updated-at 1718948744368} 
+{:block/created-at 1718948744368
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 14
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label "header"
+:id "4d217202-2f63-11ef-83da-25c9c69a919f"
+:fontWeight 400
+:noFill true
+:point [2561 1731.59]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]
+:bindingId "4d217200-2f63-11ef-83da-25c9c69a919f"}
+:end 
+{:id "end"
+:canBind true
+:point [459 1.72]
+:bindingId "4d217201-2f63-11ef-83da-25c9c69a919f"}}
+:decorations 
+{:end "arrow"}
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718928901575
+:italic false}}
+:block/updated-at 1718948744368} 
+{:block/created-at 1718929099033
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 0
+:scale [1 1]
+:type "image"
+:assetId "90c51e80-2f63-11ef-83da-25c9c69a919f"
+:size [930.2738257598004 714.981883226818]
+:opacity 1
+:id "90c78f80-2f63-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [-1792 -1784]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718929015066
+:clipping 0}}
+:block/updated-at 1718929099033} 
+{:block/created-at 1718948744615
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 15
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label "unit"
+:id "01a00622-2f6d-11ef-83da-25c9c69a919f"
+:fontWeight 400
+:noFill true
+:point [1401 1221.36]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]
+:bindingId "01a00620-2f6d-11ef-83da-25c9c69a919f"}
+:end 
+{:id "end"
+:canBind true
+:point [499 268.63]
+:bindingId "01a00621-2f6d-11ef-83da-25c9c69a919f"}}
+:decorations 
+{:end "arrow"}
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718933069786
+:italic false}}
+:block/updated-at 1718948744615} 
+{:block/created-at 1718948744368
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 16
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label "unit\n"
+:id "08815892-2f6d-11ef-83da-25c9c69a919f"
+:fontWeight 400
+:noFill true
+:point [1169 1767.42]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 192.2]
+:bindingId "08815890-2f6d-11ef-83da-25c9c69a919f"}
+:end 
+{:id "end"
+:canBind true
+:point [731 0]
+:bindingId "08815891-2f6d-11ef-83da-25c9c69a919f"}}
+:decorations 
+{:end "arrow"}
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:nonce 1718933081319
+:italic false}}
+:block/updated-at 1718948744368} 
+{:block/created-at 1718948760881
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 17
+:scale [1 1]
+:pageId "LSN"
+:scaleLevel "md"
+:fill ""
+:compact false
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 390]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "8841c5f0-2f91-11ef-83da-25c9c69a919f"
+:noFill false
+:point [1648 664]
+:parentId "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:collapsedHeight 0
+:nonce 1718948757457}}
+:block/updated-at 1718948760881})
+:pages (
+{:block/uuid #uuid "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "666cf62d-bd57-4c7f-8032-bbb364f8d631"
+:name "redo log 工作原理"
+:bindings 
+{:59069690-2f5e-11ef-83da-25c9c69a919f 
+{:id "59069690-2f5e-11ef-83da-25c9c69a919f"
+:type "line"
+:fromId "5906e4b0-2f5e-11ef-83da-25c9c69a919f"
+:toId "50ebd9c0-2f5e-11ef-83da-25c9c69a919f"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:5906bda0-2f5e-11ef-83da-25c9c69a919f 
+{:id "5906bda0-2f5e-11ef-83da-25c9c69a919f"
+:type "line"
+:fromId "5906e4b0-2f5e-11ef-83da-25c9c69a919f"
+:toId "d51daf00-2f56-11ef-83da-25c9c69a919f"
+:handleId "end"
+:point [0.63 0.44]
+:distance 4}
+:4d217200-2f63-11ef-83da-25c9c69a919f 
+{:id "4d217200-2f63-11ef-83da-25c9c69a919f"
+:type "line"
+:fromId "4d217202-2f63-11ef-83da-25c9c69a919f"
+:toId "6674aef4-038c-44bd-9bce-673e72096b77"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:4d217201-2f63-11ef-83da-25c9c69a919f 
+{:id "4d217201-2f63-11ef-83da-25c9c69a919f"
+:type "line"
+:fromId "4d217202-2f63-11ef-83da-25c9c69a919f"
+:toId "6674af0b-2eec-4b29-be50-fac2e393957d"
+:handleId "end"
+:point [0.58 0.47]
+:distance 4}
+:01a00620-2f6d-11ef-83da-25c9c69a919f 
+{:id "01a00620-2f6d-11ef-83da-25c9c69a919f"
+:type "line"
+:fromId "01a00622-2f6d-11ef-83da-25c9c69a919f"
+:toId "6674be36-5ec8-42e4-af69-e3d5bf72a4d6"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:01a00621-2f6d-11ef-83da-25c9c69a919f 
+{:id "01a00621-2f6d-11ef-83da-25c9c69a919f"
+:type "line"
+:fromId "01a00622-2f6d-11ef-83da-25c9c69a919f"
+:toId "6674aef4-038c-44bd-9bce-673e72096b77"
+:handleId "end"
+:point [0.56 0.46]
+:distance 4}
+:08815890-2f6d-11ef-83da-25c9c69a919f 
+{:id "08815890-2f6d-11ef-83da-25c9c69a919f"
+:type "line"
+:fromId "08815892-2f6d-11ef-83da-25c9c69a919f"
+:toId "6674ae3e-dc7b-496a-a4d2-8152daaa5abb"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:08815891-2f6d-11ef-83da-25c9c69a919f 
+{:id "08815891-2f6d-11ef-83da-25c9c69a919f"
+:type "line"
+:fromId "08815892-2f6d-11ef-83da-25c9c69a919f"
+:toId "6674aef4-038c-44bd-9bce-673e72096b77"
+:handleId "end"
+:point [0.5 0.45]
+:distance 4}}
+:nonce 1
+:assets [
+{:id "90c51e80-2f63-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1718929014821_0.png"
+:size [700 538]} 
+{:id "d51d12c0-2f56-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1718923546060_0.png"
+:size [677 408]} 
+{:id "d215de80-2f5c-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1718926117879_0.png"
+:size [2530 826]} 
+{:id "50eaef60-2f5e-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1718926760250_0.png"
+:size [424 322]} 
+{:id "72321c60-2f5f-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1718927245564_0.png"
+:size [720 371]}]
+:shapes-index ("90c78f80-2f63-11ef-83da-25c9c69a919f" "4416fbd0-2f54-11ef-83da-25c9c69a919f" "c386bb80-2f54-11ef-83da-25c9c69a919f" "6674ae2c-9057-4440-a689-623db8b926ff" "6674ae3e-dc7b-496a-a4d2-8152daaa5abb" "6674aef4-038c-44bd-9bce-673e72096b77" "6674af0b-2eec-4b29-be50-fac2e393957d" "d51daf00-2f56-11ef-83da-25c9c69a919f" "d2162ca0-2f5c-11ef-83da-25c9c69a919f" "fe3b98b0-2f5c-11ef-83da-25c9c69a919f" "50ebd9c0-2f5e-11ef-83da-25c9c69a919f" "5906e4b0-2f5e-11ef-83da-25c9c69a919f" "6674be36-5ec8-42e4-af69-e3d5bf72a4d6" "723306c0-2f5f-11ef-83da-25c9c69a919f" "4d217202-2f63-11ef-83da-25c9c69a919f" "01a00622-2f6d-11ef-83da-25c9c69a919f" "08815892-2f6d-11ef-83da-25c9c69a919f" "8841c5f0-2f91-11ef-83da-25c9c69a919f")}}
+:block/updated-at 1718948760881
+:block/created-at 1718416941732
+:block/type "whiteboard"
+:block/name "redo log 工作原理"
+:block/original-name "redo log 工作原理"})}

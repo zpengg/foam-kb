@@ -1,0 +1,110 @@
+{:blocks (
+{:block/created-at 1719218467580
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 0
+:scale [1 1]
+:type "image"
+:assetId "7c5894a0-3205-11ef-83da-25c9c69a919f"
+:size [973 585]
+:opacity 1
+:id "7c5957f0-3205-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [-324.9945983886719 -115.40160751342773]
+:parentId "666c62d9-5193-4359-beda-e52e0ab8920e"
+:nonce 1719218461423
+:clipping 0}}
+:block/updated-at 1719218467580} 
+{:block/created-at 1719218471150
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 1
+:scale [1 1]
+:type "image"
+:assetId "8000b510-3205-11ef-83da-25c9c69a919f"
+:size [1063 516]
+:opacity 1
+:id "80010330-3205-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [856 -40]
+:parentId "666c62d9-5193-4359-beda-e52e0ab8920e"
+:nonce 1719218467763
+:clipping 0}}
+:block/updated-at 1719218471150} 
+{:block/created-at 1719218640365
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 2
+:scale [1 1]
+:type "image"
+:assetId "8774aa90-3205-11ef-83da-25c9c69a919f"
+:size [1187 616]
+:opacity 1
+:id "8774d1a0-3205-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [2000 -128]
+:parentId "666c62d9-5193-4359-beda-e52e0ab8920e"
+:nonce 1719218480431
+:clipping 0}}
+:block/updated-at 1719218640365} 
+{:block/created-at 1719218714458
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 3
+:scale [1 1]
+:type "image"
+:assetId "e8154cb0-3205-11ef-83da-25c9c69a919f"
+:size [1136 627]
+:opacity 1
+:id "e81796a0-3205-11ef-83da-25c9c69a919f"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [880 800]
+:parentId "666c62d9-5193-4359-beda-e52e0ab8920e"
+:nonce 1719218642296
+:clipping 0}}
+:block/updated-at 1719218714458})
+:pages (
+{:block/uuid #uuid "666c62d9-5193-4359-beda-e52e0ab8920e"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "666c62d9-5193-4359-beda-e52e0ab8920e"
+:name "go map"
+:bindings 
+{}
+:nonce 1
+:assets [
+{:id "7c5894a0-3205-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1719218461256_0.png"
+:size [1946 1170]} 
+{:id "8000b510-3205-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1719218467419_0.png"
+:size [2126 1032]} 
+{:id "8774aa90-3205-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1719218479864_0.png"
+:size [2374 1232]} 
+{:id "e8154cb0-3205-11ef-83da-25c9c69a919f"
+:type "image"
+:src "../assets/image_1719218642025_0.png"
+:size [2272 1254]}]
+:shapes-index ("7c5957f0-3205-11ef-83da-25c9c69a919f" "80010330-3205-11ef-83da-25c9c69a919f" "8774d1a0-3205-11ef-83da-25c9c69a919f" "e81796a0-3205-11ef-83da-25c9c69a919f")}}
+:block/updated-at 1719218714458
+:block/created-at 1718379225950
+:block/type "whiteboard"
+:block/name "go map"
+:block/original-name "go map"})}

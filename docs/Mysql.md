@@ -1,1 +1,20 @@
-- [[Mysql 部署]]
+- 分层
+	- MySQL Server层
+		- 连接器
+		- 查询缓存
+		- 分析器
+		- 优化器
+		- 执行器
+	- 存储引擎
+		- MyISAM
+		- [[InnoDB]]
+- [[事务]]
+	- [[redo log]][[两阶段提交]]
+- [[MySQL 部署]]
+- [[SQL]]
+- [[MySQL 日志]]
+-
+-
+- 参考资料
+- [MySql实战45讲 | MySql实战45讲](https://jums.gitbook.io/mysql-shi-zhan-45-jiang)
+-

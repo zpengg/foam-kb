@@ -1,0 +1,18 @@
+- ![InnoDB architecture diagram showing in-memory and on-disk structures. In-memory structures include the buffer pool, adaptive hash index, change buffer, and log buffer. On-disk structures include tablespaces, redo logs, and doublewrite buffer files.](https://dev.mysql.com/doc/refman/8.4/en/images/innodb-architecture-8-0.png)
+- 分两块
+	- In-Memory
+	- On-Disk
+-
+- 内存与磁盘交互单位
+	- [[数据页]]，基于[[OS/Page]]
+- [[Buffer Pool]]
+	- 就是将数据的磁盘IO转换成了内存操作, log buffer 同理
+	- [[redo log]] 用来恢复, 保证数据不丢失
+-
+- 为什么需要 增加一次 redo log  IO #card #why
+	- reedo log 顺序写
+	- 数据文件 随机写
+- 预写日志后面再将数据刷盘的机制 是  [[WAL]]
+-
+- 查看当前运行情况
+	- [[ENGINE INNODB STATUS]]

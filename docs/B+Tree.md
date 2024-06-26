@@ -1,0 +1,6 @@
+- 树的叶子节点存储数据页，
+- 非叶子节点存储数据页的目录(目录页),
+-
+- ![B+树结构示意图](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eceb8d998695450984e77700a5df867e~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
+- 双向链表
+	- 为了方便数据范围查找来，数据页之间使用双向链表链接

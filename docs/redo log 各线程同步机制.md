@@ -1,0 +1,8 @@
+- Group Commit
+	- version <8.0
+	- 用户线程触发fsync或者等先提交的线程执行fsync
+	- ![](https://dbaplus.cn/uploadfile/2019/0121/20190121104629132.jpg)
+-
+-
+- 分片的消息队列
+	- version >= 8.0

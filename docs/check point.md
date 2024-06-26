@@ -1,0 +1,21 @@
+- check point #card #what
+  collapsed:: true
+	- [[check point 机制]]，防止 [[redo log file]] 循环写覆盖了还不能删除的 [[redo log]]
+	- 用[[LSN]]来表示
+	- 2个， 轮换写入
+- 循环写文件 什么时候可以覆盖 redo log #card #when
+	-
+		-
+		- redo log file中小于该LSN的redo log都是可以被覆盖的
+-
+- ![](https://img2023.cnblogs.com/blog/524341/202304/524341-20230408231330741-1062202369.png)
+- 创建阶段：
+	- 事务创建一条日志
+- 日志刷盘：
+	- 日志写入到磁盘上的日志文件
+- 数据刷盘：
+	- 日志对应的脏页数据写入到磁盘上的数据文件
+	- [[Buffer Pool/flush链表]] 最早未被刷盘的[[控制块]]里有`oldest_modification`属性
+- 写CKP：
+	- 日志被当作Checkpoint写入日志文件；
+	- redo log file中小于该LSN的redo log都是可以被覆盖的

@@ -1,0 +1,12 @@
+- **LSN不仅只存在于[[redo log]]中，在每个[[数据页]]头部也会有对应的LSN号**
+-
+- Log sequence number
+	- 生成的redo log总量，即lsn。
+- Log flushed up to
+	- 写入到磁盘的redo log总量，即 flushed_to_disk_lsn。
+- Pages flushed up to
+	- Buffer Pool里最早被修改页面的oldest_modification。
+- Last checkpoint at
+	- 对应 checkpoint_lsn 值。
+-
+- 正常关闭时 LSN1=LSN2=LSN3=LSN4

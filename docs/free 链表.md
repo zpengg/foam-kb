@@ -1,0 +1,8 @@
+- ![free链表结构示意图](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/22645f30e20649549815e8dc1ea4cfb9~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
+- 块结构
+	- 表空间编号
+	- 页号
+	- 缓存页在Buffer Pool中的地址
+	- 链表节点信息
+	- 锁信息
+	- [[LSN]]

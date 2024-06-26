@@ -1,0 +1,18 @@
+- 将缓冲池中的脏页刷回到磁盘就会记录checkpoint
+- checkponit之前的脏数据已经落过盘,恢复时关注check point 之后的数据
+-
+- check point 机制 #card #what
+	- Fuzzy checkpoint
+		- 进行部分脏页的刷新，有效循环利用Redo日志。
+		- Master Thread Checkpoint
+			- Master Thread 差不多以每秒或每十秒的速度从缓冲池的脏页列表中刷新一定比例的页回磁盘，这个过程是异步的，不会阻塞其他操作。
+		- FLUSH_LRU_LIST Checkpoint
+			- Buffer Pool 的 LRU 列表需要保留一定数量的空闲页面，来保证 Buffer Pool 中有足够的空间应对新的数据库请求。
+			- 在空闲列表不足时，移除LRU列表尾端的页，若移除的页为脏页，则需要进行 Checkpoint。
+			- 空闲数量阈值是可以配置的（默认是1024），这个检查在一个单独的 Page Cleaner 线程中进行。
+		- Async/Sync Flush Checkpoint：
+			- 当重做日志不可用（即 redo log 写满）时，需要强制将一些页刷新回磁盘，此时脏页从脏页列表中获取。
+		- dirty page too much Checkpoint
+			- 脏页太多时强制触发检查点
+	- Sharp checkpoint
+		- 发生在关闭数据库时，将所有脏页刷回磁盘。

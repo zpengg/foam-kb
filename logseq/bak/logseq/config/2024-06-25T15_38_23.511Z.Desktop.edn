@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["Hbase" "database" "mind"]
+ :favorites ["go gc" "database" "mind"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -421,4 +421,9 @@
  :file/name-format :triple-lowbar
  :journal/page-title-format "yyyy-MM-dd"
  :graph/settings {:journal? false
- :builtin-pages? false}}
+ :builtin-pages? false
+ :orphan-pages? false
+ :excluded-pages? true}
+ :graph/forcesettings {:charge-range 1600
+ :link-dist 110
+ :charge-strength -600}}

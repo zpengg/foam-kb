@@ -1,2 +1,2 @@
 - https://github.com/pingcap/awesome-database-learning
--
+- [[事务传播]]

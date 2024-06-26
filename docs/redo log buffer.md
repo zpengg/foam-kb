@@ -1,0 +1,22 @@
+- ![多个事务产生的MTR日志交替被写入到Log Buffer](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/026be1661f4041ec98c696fbb3e15c76~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
+-
+- 顺序写入
+	- redo log buffer也是顺序写入的，从前往后写
+	- [[8.0 无锁化 写入]]
+-
+- 写入位置： InnoDB提供了一个全局变量`buf_free`，
+	- buf_free前面的是已经使用的空间，后面的是空闲空间，通过buf_free就知道每次该往哪个block的哪个位置写了。
+-
+- 大小`innodb_log_buffer_size`
+	- 来控制redo log buffer的大小，默认是16MB。
+-
+- 刷盘策略
+	- redo log buffer空间被占用超过50%时。
+	- 事务提交的时候，必须刷盘，否则数据丢失。
+	- 后台线程以每秒一次的频率刷盘。
+	- 正常关闭MySQL时。
+	- 做checkpoint操作时。
+-
+-
+-
+-

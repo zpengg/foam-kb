@@ -1,0 +1,5 @@
+- Channel 总是在堆上进行分配，它们会被垃圾回收器进行回收
+- channel 结构
+	- ![](https://golang.design/under-the-hood/assets/chan.png)
+-
+- [3.6 通信原语 | Go 语言原本](https://golang.design/under-the-hood/zh-cn/part1basic/ch03lang/chan/)

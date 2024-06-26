@@ -1,0 +1,1 @@
+- ![](https://dev.mysql.com/doc/dev/mysql-server/latest/dia_arch_writing.png)

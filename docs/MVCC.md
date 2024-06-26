@@ -1,0 +1,32 @@
+- When 事务并发场景？
+	- 读-读，物冲突
+	- 读-写，事务隔离问题
+		- MVCC，无锁并发控制**读-写冲突**
+	- 写-写，可能更新丢失。
+		- 悲观锁
+-
+- Repeated Read 基于 MVCC 实现没， MVCC` 又依赖 `UNDO_LOG`，`UNDO_LOG`就是回滚日志，
+-
+-
+- 隐式字段
+	- DB_TRX_ID：
+	  id:: 66741e5b-d9e5-4e04-8056-3f2af641a7f1
+		- 6byte，最近修改(修改/插入)事务ID：记录创建这条记录/最后一次修改该记录的事务ID
+	- DB_ROLL_PTR：
+		- 7byte，回滚指针，指向这条记录的上一个版本（存储于rollback segment里）
+	- DB_ROW_ID：
+		- 6byte，隐含的自增ID（隐藏主键），如果数据表没有主键，InnoDB会自动以DB_ROW_ID产生一个聚簇索引
+		- 不一定有
+-
+- [[undo log]]
+	- **insert undo log****
+		- 代表事务在`insert`新记录时产生的`undo log`,
+		- 仅用于事务回滚，并且在事务提交后可以被立即丢弃**。
+	- **update undo log**
+		- 事务在进行`update`或`delete`时产生的`undo log`;
+		- 不仅在事务回滚时需要，在实现MVCC快照读时也需要**；
+		- 所以不能随便删除，只有在快速读或事务回滚不涉及该日志时，对应的日志才会被清理线程统一清除。
+- [[版本链]]
+	- ![图片](https://ask.qcloudimg.com/http-save/yehe-5256901/afb64927818372d10bdc18d6bd92cd68.png)
+- [[ReadView]]
+	-

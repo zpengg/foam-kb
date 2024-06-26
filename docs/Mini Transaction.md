@@ -1,0 +1,11 @@
+- [MTRmini-transaction设计与实现 | pagefault](https://www.pagefault.info/2019/04/18/mtr-minitransaction-design-and-implementation.html)
+- MTR中会做两个事情.
+	- 写[[redolog]]
+	- 挂载脏页到[[flush list]].
+-
+- 一次原子的写数据会生成多个redo log，
+- 这些Redo可以访问一个Page的不同位置，也可以访问单个或者多个Page (比如[[B+Tree Page分裂]]的情况)
+-
+- MTR复制日志到Redo Log Buffer的无锁化
+	- 8.0 无锁
+	- 5.7 有锁
